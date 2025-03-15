@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <style>
+        label {
+    display: inline-block;
+    width: 120px; 
+    font-weight: bold;
+}
+.submit_butn{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.r{
+    display: inline-block;
+    width: 50px; 
+}
+form{
+    margin-left: 200px;
+    width: 400px;
+    
+}
+fieldset{
+    background-color:rgba(255, 166, 0, 0.323);
+}
+        </style>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <br>
+    <form >
+        <fieldset>
+            <legend>Personal details</legend>
+    <label > First Name: </label>
+     <input type="text"/><br><br>
+     <label> Last Name: </label>
+     <input type="text"/><br><br>
+     <label> Email Address:</label>
+     <input type="email"/><br><br>
+   
+     <label> Gender: </label>
+     <input type="radio" value="male" name="a"/>
+     <label  class="r">Male</label>
+     <input  type="radio" value="female" name="a"/>
+     <label class="r" >Female</label><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>City</legend>
+        <label> City: </label>
+        <select >
+           <option value="" disabled selected>please select city</option>
+           <option value="Amman">palestine</option>
+           <option value="Tulkarm">palestine</option>
+         
+   
+        </select><br><br>
+    </fieldset>
+     <button class="submit_butn" type="submit" >Subscripe</button>
+    </form>
+
+    </body>
+</html>
