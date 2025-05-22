@@ -8,13 +8,15 @@
             }
             .grid-container{
                 display:grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: repeat(4,1fr);
                 border: 14px solid goldenrod;
             }
             .grid-container >div{
                 color:white;
                 font-size: 150px;
-                text-align: center;
+                display:grid;
+                justify-content: center;
+                /*or use padding */
             }
             .color1{
                 background-color:#18b898;
