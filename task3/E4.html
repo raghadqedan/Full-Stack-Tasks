@@ -4,21 +4,29 @@
         <meta charset="utf-8"/>
         <style>
             .p1{
-              width: 400px;
+              flex-basis: 400px;
               background-color: white;
-              margin: 10px;
+             
             }
             .p2{border-top-style:solid;
                 border-bottom-style: solid;
                 overflow-y: scroll;
                 width: 1000px;
                 height: 100px;
+                margin-left: 10px
+            }
+            .container1,.container2{
+                 display: flex;
+                 gap:15px;
+                 padding: 10px;
+                
+
             }
         </style>
     </head>
     <body style="background-color: #e22bb7b6;">
         <h1>Floating Articles</h1>
-        <div style="display: flex;">
+        <div class="container1">
             <p class="p1" >
                 The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
 
@@ -49,7 +57,7 @@
                         inherit - The element inherits the float value of its parent
                         In its simplest use, the float property can be used to wrap text around images.</p>
         </div>
- 
+        
             <p class="p2" >  The float property can have one of the following values:
                     
                 left - The element floats to the left of its container
@@ -62,7 +70,7 @@
                   Nunc sagittis dictum nisi,
                  sed ullamcorper ipsum dignissim ac...</p>
 
-                 <div style="display: flex;">
+                 <div class="container2">
                     <p class="p1" >
                         The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
         
