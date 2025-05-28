@@ -104,12 +104,12 @@
         }
         .main-content{
             display: grid;
-            height: 650px;
+            height: 600px;
             grid-template-columns: repeat(6,1fr);
-            grid-template-rows: 67% 33%;
-           column-gap: 5px;
-            margin: 10px;
-            padding: 10px;
+            grid-template-rows: 400px 200px;
+           gap: 5px;
+            padding: 1px, 1px,1px,1px;
+        
         }
        .f{
         display: flex;
@@ -123,6 +123,7 @@
         flex-basis:20px;
            background-color: #ececec;
            padding: 3px;
+           margin: 2px;
        }
          .f > div{
         flex-basis: 415.5px;
@@ -146,7 +147,6 @@
     content:"-";
     font-size:16px;
     color:black
-
 
 }
 

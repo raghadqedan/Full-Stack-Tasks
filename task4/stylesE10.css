@@ -2,7 +2,7 @@
         .main-container {
             background-color: #0098C0;
             width: 90%;
-            height: 550px;
+            height: 500px;
             display: flex;
             justify-content: space-between;
             padding: 25px 15px;
@@ -12,15 +12,15 @@
 
         .main-container>p {
             color: rgba(255, 255, 255, 0.945);
-            margin-left: 250px;
+            margin-left: 200px;
             font-size: 30px;
+            margin-right: 20px;
 
 
         }
 
         .content-grid {
             background-color: white;
-            flex-basis: 70%;
             box-shadow: 5px 5px rgba(32, 33, 36, 0.5);
             display: grid;
             grid-template-columns: repeat(3, 1fr);

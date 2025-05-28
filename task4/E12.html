@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            padding: 4px;
+            height: 95vh;
+        }
+
+        .left-container {
+            width: 400px;
+            position: fixed;
+            left: 30px
+        }
+
+        .left-container>p {
+            text-align: end;
+            font-size: 40px;
+            margin-bottom: 0px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .grid-image {
+            border-radius: 5px 5px 0px 0px;
+            width: 215px;
+            height: 130px;
+            margin-bottom: 0px;
+
+        }
+
+        .grid-container>div>p {
+            color: #486E95;
+            font-size: 18px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 25px;
+            text-align: end;
+
+
+        }
+
+        .right-container {
+            position:fixed;
+            right: 10px;
+            text-align: end;
+
+        }
+      
+        .right-container >img{
+            width:1000px ;
+            height: 500px;
+            margin-top: 10px;
+        }
+        .right-container >p{
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            margin-top: 20px;
+        }
+        .avater{
+            float: right;
+            width: 40px;
+            height: 40px;
+            float: right;
+            margin: 9px;
+ 
+        }
+   
+        .avater-background{
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.155);
+            width: 60px;
+            height: 60px;
+           float: right;
+           margin: 10px;
+        }
+        .right-container >div>p{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <container class="left-container">
+        <p>الزوار شاهدوا ايضا</p>
+        <hr class="divider" />
+        <div class="grid-container">
+            <div>
+                <img class="grid-image" src="../images/task4Image/router.jpg" />
+                <p>كيفية ضبط اعدادات الراوتر</p>
+            </div>
+            <div>
+                <img class="grid-image" src="../images/task4Image/search.png" />
+                <p> بحث عن خدمات محركات البحث</p>
+            </div>
+            <div>
+                <img class="grid-image" src="../images/task4Image/internet.png" />
+                <p>أثر الانترنت في التعليم والتعلم </p>
+            </div>
+
+            <div>
+                <img class="grid-image" src="../images/task4Image/capel.png" />
+                <p>أسباب بطء الانترنت </p>
+            </div>
+
+            <div>
+                <img class="grid-image" src="../images/task4Image/search1.png" />
+                <p>
+                    محركات البحث العالمية
+                </p>
+            </div>
+
+            <div>
+                <img class="grid-image" src="../images/task4Image/world.png" />
+                <p>
+                    بحث عن تاريخ الانترنت
+                </p>
+            </div>
+        </div>
+    </container>
+
+    <container class="right-container">
+        <p>أفكار عمل عن طريق الانترنت</p>
+        <div >
+             <div class="avater-background"> <img  class="avater" src="../images/task4Image/user-solid.svg" /> </div>
+            <p>تمت الكتابة بواسطة: شهيرة دعدوع
+                  ,<br> اخر تحديث:14:01 أبريل 2021
+            </p>
+         
+         
+        </div>
+       
+             <img src="../images//task4Image/mainImage.png"/>
+   
+        
+
+
+    </container>
+</body>
+
+</html>
