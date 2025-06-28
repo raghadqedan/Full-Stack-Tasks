@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); /* responsive*/
+        gap: 1em;
+      }
+      .grid-container > div {
+        background-color: yellow;
+        text-align: center;
+        padding: 2em;
+        font-size: 3em;  /* responsive*/
+        height:auto;/* responsive*/
+     
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>what do you think!</h1>
+    <div class="grid-container">
+      <div class="item1">3</div>
+      <div class="item2">2</div>
+      <div class="item3">4</div>
+      <div class="item4">6</div>
+      <div class="item5">7</div>
+      <div class="item6">8</div>
+      <div class="item7">5</div>
+      <div class="item8">1</div>
+    </div>
+  </body>
+</html>

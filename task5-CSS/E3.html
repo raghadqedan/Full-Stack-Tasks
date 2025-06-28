@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+    
+    }
+    body{
+      padding: 10px;
+    }
+
+    .main-container {
+      margin: 20px;
+    }
+
+    .main-container>.card {
+      background-color: white;
+      display: inline-block;
+      height: 400px;
+      margin-right: 1%;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid black;
+    }
+
+    .main-container>.card>img {
+      width: 40%;
+      height: 100%;
+      object-fit: cover;
+      display: inline;
+      float: left;
+      margin-right: 8px;
+      border-radius: 8px 0px 0px 8px;
+    }
+
+    .main-container>.card>.inner-container>h2 {
+      margin: 10px;
+    }
+
+    .main-container>.card>.inner-container>p {
+      margin: 10px;
+    }
+
+    .main-container>.card>.inner-container>.author-info {
+      left: 45%;
+
+      margin-top: 20%;
+    }
+
+    .main-container>.card>.inner-container>.author-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .main-container>.card>.inner-container>.author-info>img {
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+    }
+
+    .main-container>.card>.inner-container>.author-info>.text-info>h5,
+    p {
+      margin: 0;
+    }
+
+    .main-container>.card>.inner-container>.author-info>.text-info>p {
+      color: rgba(0, 0, 0, 0.595);
+    }
+
+    @media (max-width: 767px) {
+      .main-container>.card {
+        width: 100%;
+        float: none;
+        display: block;
+
+        height: auto;
+      }
+
+      .main-container>.card>img {
+        height: 160px;
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        border-radius: 8px 8px 0px 0px;
+      }
+
+      .main-container>.card>.inner-container {
+        padding: 10px;
+      }
+
+      .main-container>.card>.inner-container>h2 {
+        font-size: 18px;
+      }
+
+      .main-container>.card>.inner-container>.author-info {
+        bottom: 5px;
+        left: 20%;
+        flex-direction: column;
+        gap: 2px;
+        margin-top: unset;
+        left: 45%;
+      }
+
+      .main-container>.card>.inner-container>.author-info>img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .main-container>.card {
+        width: 40%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .main-container>.card {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <container class="main-container">
+    <div class="card">
+      <img src="../images/task5/image1.png" />
+      <div class="inner-container">
+        <h2>Best Mountain Trails 2020</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="author-info">
+          <img src="../images/task5/face-image2.webp" />
+          <div class="text-info">
+            <h5>Karen Johson</h5>
+            <p>Aug 10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../images/task5/image2.png" />
+      <div class="inner-container">
+        <h2>Best Mountain Trails 2020</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="author-info">
+          <img src="../images/task5/face-image2.webp" />
+          <div class="text-info">
+            <h5>Karen Johson</h5>
+            <p>Aug 10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../images/task5/image3.png" />
+      <div class="inner-container">
+        <h2>Best Mountain Trails 2020</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="author-info">
+          <img src="../images/task5/face-image2.webp" />
+          <div class="text-info">
+            <h5>Karen Johson</h5>
+            <p>Aug 10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </container>
+</body>
+
+</html>

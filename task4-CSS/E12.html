@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 4px;
+        margin: 0px;
+        display: flex;
+      }
+
+      .left-container {
+        width: 40%;
+        margin-left: 1rem;
+        padding: 1rem;
+      }
+
+      .left-container > p {
+        text-align: end;
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+
+      .grid-image {
+        border-radius: 5px 5px 0px 0px;
+        width: 100%;
+        max-height: 130px;
+        height: auto;
+        margin-bottom: 0px;
+      }
+
+      .grid-container > div > p {
+        color: #486e95;
+        font-size: 1.4rem;
+        margin-top: 0.8rem;
+        margin-bottom: 0px;
+
+        text-align: end;
+      }
+
+      .right-container {
+        margin-right: 0.8rem;
+        text-align: end;
+        width: 50%;
+      }
+
+      .right-container > img {
+        width: 100%;
+        min-height: 450px;
+        margin-top: 0.8rem;
+      }
+
+      .right-container > p {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-top: 1.2rem;
+      }
+      .avater {
+        float: right;
+        width: 40px;
+        height: 40px;
+        float: right;
+        margin: 9px;
+      }
+
+      .avater-background {
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.155);
+        width: 60px;
+        height: 60px;
+        float: right;
+        margin: 10px;
+      }
+      .right-container > div > p {
+        float: right;
+      }
+      @media (max-width: 1200px) {
+        body {
+          flex-direction: column-reverse;
+        }
+        .right-container,
+        .left-container {
+          width: 100%;
+          padding: 1rem;
+        }
+        .right-container > img {
+          width: 100%;
+          height: auto;
+          min-height: unset;
+          margin-top: 0.8rem;
+          margin: 1rem;
+        }
+        .right-container > p {
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .right-container > p {
+          font-size: 1.8rem;
+        }
+        .grid-container {
+          grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        }
+      }
+      @media (max-width: 576px) {
+        .right-container > p {
+          font-size: 1.5rem;
+        }
+        .left-container > p {
+          font-size: 1.3rem;
+        }
+        .avater {
+          float: right;
+          width: 20px;
+          height: 20px;
+          float: right;
+          margin: 8.5px;
+        }
+
+        .avater-background {
+          border-radius: 50%;
+          background-color: rgba(0, 0, 0, 0.155);
+          width: 40px;
+          height: 40px;
+          float: right;
+          margin: 5px;
+        }
+        .right-container > div > p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="left-container">
+      <p>الزوار شاهدوا ايضا</p>
+      <hr class="divider" />
+      <div class="grid-container">
+        <div>
+          <img class="grid-image" src="../images/task4Image/router.jpg" />
+          <p>كيفية ضبط اعدادات الراوتر</p>
+        </div>
+        <div>
+          <img class="grid-image" src="../images/task4Image/search.png" />
+          <p>بحث عن خدمات محركات البحث</p>
+        </div>
+        <div>
+          <img class="grid-image" src="../images/task4Image/internet.png" />
+          <p>أثر الانترنت في التعليم والتعلم</p>
+        </div>
+
+        <div>
+          <img class="grid-image" src="../images/task4Image/capel.png" />
+          <p>أسباب بطء الانترنت</p>
+        </div>
+
+        <div>
+          <img class="grid-image" src="../images/task4Image/search1.png" />
+          <p>محركات البحث العالمية</p>
+        </div>
+
+        <div>
+          <img class="grid-image" src="../images/task4Image/world.png" />
+          <p>بحث عن تاريخ الانترنت</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <p>أفكار عمل عن طريق الانترنت</p>
+      <div>
+        <div class="avater-background">
+          <img class="avater" src="../images/task4Image/user-solid.svg" />
+        </div>
+        <p>
+          تمت الكتابة بواسطة: شهيرة دعدوع <br />
+          اخر تحديث:14:01 أبريل 2021
+        </p>
+      </div>
+
+      <img src="../images//task4Image/mainImage.png" />
+    </div>
+  </body>
+</html>

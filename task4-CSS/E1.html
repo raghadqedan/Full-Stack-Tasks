@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        .container{
+           display: flex;
+           height: 100vh;
+        
+        }
+            .firstPart{
+                background-color: orange;
+                display: flex;
+                flex:1;
+                justify-content: center;
+                align-items: center;
+
+
+                
+             
+            }
+            .secondPart{
+                background-color: blue;
+                display: flex;
+                flex:1;
+                justify-content: center;
+                align-items: center;
+      
+            }
+          
+        
+           h1{
+            color:white;
+            font-size: 3em;
+          
+           } 
+           @media(max-width:767px){
+            .container{
+                flex-direction: column;
+            }
+           }
+
+
+        
+      </style>
+    </head>
+    <body >
+      <div class="container">
+        <div  class="firstPart">
+          <h1>
+            First Part
+          </h1></div>
+         <div class="secondPart" >
+          <h1>
+            Second Part
+          </h1>
+      </div>
+      </div>
+
+    </body>
+</html>

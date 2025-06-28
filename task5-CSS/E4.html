@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .header {
+            height: 8dvh;
+
+            background-color: rgba(0, 0, 0, 0.707);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .header .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .header .hamburger .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: black;
+            border-radius: 2px;
+            background-color: white;
+        }
+
+        .header>p,
+        ul,
+        li {
+            display: inline;
+            color: rgba(255, 255, 255, 0.736);
+        }
+
+        .header>ul>li>a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.736);
+        }
+
+        a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .header>ul>li {
+            padding-left: 10px;
+        }
+
+        .header .email-input,
+        .header .password-input {
+            height: 35px;
+            width: 250px;
+            padding: 6px;
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        .header>.submit-btn {
+            background-color: green;
+            color: white;
+            height: 45px;
+            width: 100px;
+            border-radius: 6px;
+        }
+
+        .top-container {
+            background-color: rgba(0, 0, 0, 0.04);
+            height: 40dvh;
+            padding-top: 20px;
+            padding-left: min(12rem, 8%);
+        }
+
+        .top-container>.hello-World {
+            
+             font-size: clamp(2rem, calc(2vw + 0.5rem), 5rem); 
+        }
+        
+
+        .top-container>p {
+            font-size: clamp(1rem, calc(1vw + 0.1rem), 2rem);
+        }
+
+        .top-container .learn-more {
+            background-color: rgb(0, 110, 255);
+            color: white;
+            height: 35px;
+            width: 100px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        .below-container {
+            padding-bottom: 10dvh;
+            text-align: center;
+            background-color: rgb(47, 35, 83);
+            padding-top: 20px;
+        }
+
+        .below-container>.warning-div {
+            background-color: antiquewhite;
+            padding: 10px;
+            width: 70vw;
+            max-width: 2000px;
+            margin-left: 10%;
+            font-size: 1rem;
+        }
+
+        .warning-div>span {
+            color: rgba(0, 0, 0, 0.655);
+        }
+
+        .card {
+            margin-top: 40px;
+        }
+
+        .card-content {
+            display: inline-block;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .card-content>button {
+            background-color: rgba(128, 128, 128, 0.619);
+            height: 30px;
+            width: 120px;
+            border-radius: 4px;
+            margin-top: 0px;
+            color: rgba(0, 0, 0, 0.808);
+        }
+
+        .card-content>button>i {
+            padding-right: 8px;
+        }
+
+        @media (max-width: 612px) {
+              .header{
+                gap:5px
+              }
+              .header>p{
+                font-size:1rem ;
+              }
+            .header>.email-input,
+            .header>.password-input {
+                display: none;
+            }
+         
+
+            .header .hamburger {
+                display: block;
+                color: antiquewhite;
+            }
+
+            .header>ul {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                background-color: black;
+                height: 90vh;
+                text-align: center;
+                padding-top: 20px;
+                gap: 20px;
+                border-radius: 5px;
+                width: 40vw;
+                max-width: 300px;
+            }
+
+            .header ul.active {
+                left: 8px;
+            }
+
+            .header>ul>a {
+                color: white;
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 843px) {
+
+            .header>.email-input,
+            .header>.password-input {
+                display: none;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1176px) {
+            .header {
+                place-content: center;
+            }
+
+            .header>ul>li {
+                padding-left: 5px;
+                font-size: 15px;
+            }
+
+            .header>p {
+                font-size: 15px;
+                justify-self: end;
+            }
+
+            .header>.email-input,
+            .header>.password-input {
+                width: 130px;
+                padding: 3px;
+                border-radius: 6px;
+            }
+
+            .header .submit-btn {
+                width: 50px;
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .header {
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .header .email-input,
+            .header>.password-input {
+                width: 300px;
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            .header .submit-btn {
+                width: 150px;
+                height: 60px;
+                font-size: 20px;
+            }
+
+            .header>p {
+                font-size: 25px;
+            }
+
+            .header>ul>li {
+                padding-left: 15px;
+                font-size: 25px;
+            }
+
+            .top-container .learn-more {
+                height: 45px;
+                width: 200px;
+                margin-top: 20px;
+                border-radius: 4px;
+                font-size: 1rem;
+            }
+
+            .below-container {
+                height: 35dvh;
+            }
+
+            .card-content {
+                width: 300px;
+                margin: 40px;
+            }
+
+            .card-content>h1 {
+                font-size: 40px;
+            }
+
+            .card-content>p {
+                font-size: 24px;
+            }
+
+            .card-content>button {
+                height: 40px;
+                width: 150px;
+                border-radius: 4px;
+                margin-top: 0px;
+                color: rgba(0, 0, 0, 0.808);
+            }
+
+            .card-content>button>i {
+                padding-right: 8px;
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 1400px) {}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <p>Bootstrap Mini Project</p>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Dropdown</a></li>
+        </ul>
+
+        <input class="email-input" type="email" placeholder="Email" />
+        <input class="password-input" type="password" placeholder="Password" />
+
+        <input class="submit-btn" type="submit" value="Sign In" />
+    </div>
+    <div class="top-container">
+        <h1 class="hello-World">Hello, world!</h1>
+        <p>
+            This is Exercise #9 include alarge callout ajumpbotron and three
+            supporting pieces of content
+        </p>
+        <button class="learn-more" type="submit">Learn More</button>
+    </div>
+    <div class="below-container">
+        <div class="warning-div">
+            Warning <span>:your subscription is about to expire in 3 days </span>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="card">
+            <span class="card-content">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button type="button">
+                    <i class="fa-solid fa-circle-info"></i>View Details
+                </button>
+            </span>
+            <span class="card-content">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button type="button">
+                    <i class="fa-solid fa-circle-info"></i>View Details
+                </button>
+            </span>
+            <span class="card-content">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button type="button">
+                    <i class="fa-solid fa-location-dot"></i>Details
+                </button>
+            </span>
+        </div>
+    </div>
+</body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".header ul");
+
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+</script>
+
+</html>
