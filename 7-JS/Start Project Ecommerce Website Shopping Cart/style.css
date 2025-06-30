@@ -121,7 +121,7 @@ header > #cart-icon .cart-item-count {
 }
 .cart-box{
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
 
     
   
@@ -136,6 +136,7 @@ header > #cart-icon .cart-item-count {
 }
 .cart-box .cart-details{
 display: inline-block;
+width: 180px;
 vertical-align: top;
 padding-top: 10px;
 }

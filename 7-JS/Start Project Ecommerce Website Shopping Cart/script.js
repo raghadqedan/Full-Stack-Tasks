@@ -11,6 +11,7 @@ addCartButton.forEach((button) => {
     button.addEventListener("click", (event) => {
         const selectedProductBox = event.target.closest(".product-box");
         addToCart(selectedProductBox);
+       
     });
 });
 //get the selected product data
@@ -39,20 +40,21 @@ const addToCart = (selectedProductBox) => {
                 <span class="cart-product-price">${productPrice}</span>
                 <div class="cart-product-quantity">
                     <button id="decrement">-</button>
-                    <span class="number">2</span>
+                    <span class="number">1</span>
                     <button id="increment">+</button>
                 </div>
             </div>
             <i class="ri-delete-bin-6-line cart-remove"></i>`;
 
     cartContent.appendChild(cartBox);
-    cartBox
-        .querySelector(".cart-remove")
-        .addEventListener("click", () => cartBox.remove());
+    cartBox.querySelector(".cart-remove")
+        .addEventListener("click", () =>{ cartBox.remove();
+       updateTotalPrice();
+
+        });
 
     //control in cart-product-quantity inc dec
-    cartBox
-        .querySelector(".cart-product-quantity")
+    cartBox.querySelector(".cart-product-quantity")
         .addEventListener("click", (event) => {
             const quantityElement = cartBox.querySelector(".number");
 
@@ -63,11 +65,28 @@ const addToCart = (selectedProductBox) => {
                 //if the element quantity is 0 remove the element from cart
                 if (quantity == 0) {
                     cartBox.remove();
+                    updateTotalPrice()
                     return;
                 }
             } else if (event.target.id === "increment") {
                 quantity++;
             }
             quantityElement.textContent = quantity;
+            updateTotalPrice();
+
         });
+       updateTotalPrice();
 };
+
+const updateTotalPrice = ()=>{
+        const cartContent = document.querySelector(".cart-content");
+        const cartElements= cartContent.querySelectorAll(".cart-box");
+        const cartTotalPriceElement=document.querySelector('.cart-total-price');
+        let totalPrice=0.0;
+        cartElements.forEach (cartItem=>{
+         const productQuantity=cartItem.querySelector('.number').textContent;
+         const productPrice=cartItem.querySelector('.cart-product-price').textContent.replace('$','');
+           totalPrice+=productQuantity* productPrice;
+        });
+        cartTotalPriceElement.textContent=`$${totalPrice}`
+}
