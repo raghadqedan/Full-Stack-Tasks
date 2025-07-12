@@ -58,10 +58,11 @@ header > #cart-icon .cart-item-count {
 }
 .product-content {
   padding: 20px;
+  
 }
 .product-box {
   padding: 20px;
-
+   
   display: inline-block;
 }
 .product-box .product-image-box {
@@ -108,6 +109,9 @@ header > #cart-icon .cart-item-count {
     z-index: 100;
     box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.1); 
     transition: 0.5s;
+   overflow-y:scroll;
+   scrollbar-width: none;   
+
    
 
 }
