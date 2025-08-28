@@ -84,6 +84,36 @@ addToCart = (selectedShopBox) => {
 };
 
 saveCart();
+
+function createCartBox(product) {
+    const cartBox = document.createElement("div");
+    cartBox.classList.add("cart-box");
+    let { Id, Image, Price, Quantity } = product;
+    cartBox.innerHTML = `<img src="${Image}"  class="cart-product-image" data-product-id="${Id}">
+                <div class="cart-product-quantity"  data-price="${parseFloat(
+        Price
+    )}">
+                    <button id="decrement">-</button>
+                    <span class="number">${Quantity}</span>
+                    <button id="increment">+</button>
+                </div>
+                <h2 class="cart-product-price">${Price}</h2>
+                <div class="cart-close-icon-circle">
+                    <i class=" ri-close-line cart-close product-remove-icon"></i>
+                </div>
+    `;
+    cartBox
+        .querySelector(".product-remove-icon")
+        .addEventListener("click", () => {
+            const productId = cartBox.querySelector(".cart-product-image").dataset
+                .productId;
+            cartBox.remove();
+            cart = cart.filter((cartItem) => cartItem.Id != productId);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateTotalPrice();
+        });
+    return cartBox;
+}
 const updateTotalPriceOfProduct = () => {
     const cartContent = document.querySelector(".cart-content");
     let totalPriceforProduct;
@@ -146,35 +176,7 @@ function quantityControl(cartBox, product) {
         });
 }
 
-function createCartBox(product) {
-    const cartBox = document.createElement("div");
-    cartBox.classList.add("cart-box");
-    let { Id, Image, Price, Quantity } = product;
-    cartBox.innerHTML = `<img src="${Image}"  class="cart-product-image" data-product-id="${Id}">
-                <div class="cart-product-quantity"  data-price="${parseFloat(
-        Price
-    )}">
-                    <button id="decrement">-</button>
-                    <span class="number">${Quantity}</span>
-                    <button id="increment">+</button>
-                </div>
-                <h2 class="cart-product-price">${Price}</h2>
-                <div class="cart-close-icon-circle">
-                    <i class=" ri-close-line cart-close product-remove-icon"></i>
-                </div>
-    `;
-    cartBox
-        .querySelector(".product-remove-icon")
-        .addEventListener("click", () => {
-            const productId = cartBox.querySelector(".cart-product-image").dataset
-                .productId;
-            cartBox.remove();
-            cart = cart.filter((cartItem) => cartItem.Id != productId);
-            localStorage.setItem("cart", JSON.stringify(cart));
-            updateTotalPrice();
-        });
-    return cartBox;
-}
+
 function saveCart() {
     document.querySelector(".save-cart").addEventListener("click", () => {
         localStorage.setItem("Savedcart", JSON.stringify(cart));

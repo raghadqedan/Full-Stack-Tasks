@@ -1,0 +1,769 @@
+{
+  "html": [
+    {
+      "question": "What is the correct syntax of doctype in HTML5?",
+      "answer_1": "</doctype html>",
+      "answer_2": "<doctype html>",
+      "answer_3": "<doctype html!>",
+      "answer_4": "<!doctype html>",
+      "right_answer": "<!doctype html>"
+    },
+    {
+      "question": "Which element is used to get highlighted text in HTML5?",
+      "answer_1": "<u>",
+      "answer_2": "<mark>",
+      "answer_3": "<highlight>",
+      "answer_4": "<b>",
+      "right_answer": "<mark>"
+    },
+    {
+      "question": "Which HTML tag is used to make text bold?",
+      "answer_1": "<u>content</u>",
+      "answer_2": "<b>content</b>",
+      "answer_3": "<br>content</br>",
+      "answer_4": "<i>content</i>",
+      "right_answer": "<b>content</b>"
+    },
+    {
+      "question": "Which HTML tag is used to insert an image?",
+      "answer_1": "<img url='image.jpg' />",
+      "answer_2": "<img alt='image.jpg' />",
+      "answer_3": "<img src='image.jpg' />",
+      "answer_4": "<img href='image.jpg' />",
+      "right_answer": "<img src='image.jpg' />"
+    },
+    {
+      "question": "Which tag is used to create a hyperlink?",
+      "answer_1": "<link>",
+      "answer_2": "<a>",
+      "answer_3": "<href>",
+      "answer_4": "<hyperlink>",
+      "right_answer": "<a>"
+    },
+    {
+      "question": "What does the <title> tag define?",
+      "answer_1": "The main heading on the page",
+      "answer_2": "The title of the document shown in browser tab",
+      "answer_3": "The footer section",
+      "answer_4": "The body content",
+      "right_answer": "The title of the document shown in browser tab"
+    },
+    {
+      "question": "Which tag is used for inserting a line break?",
+      "answer_1": "<lb>",
+      "answer_2": "<break>",
+      "answer_3": "<br>",
+      "answer_4": "<hr>",
+      "right_answer": "<br>"
+    },
+    {
+      "question": "What does the <meta> tag do in HTML?",
+      "answer_1": "Defines metadata about the HTML document",
+      "answer_2": "Inserts an image",
+      "answer_3": "Creates a table",
+      "answer_4": "Defines the main content",
+      "right_answer": "Defines metadata about the HTML document"
+    },
+    {
+      "question": "Which attribute is used to specify an alternate text for an image?",
+      "answer_1": "alt",
+      "answer_2": "src",
+      "answer_3": "title",
+      "answer_4": "href",
+      "right_answer": "alt"
+    },
+    {
+      "question": "Which element defines the body of an HTML document?",
+      "answer_1": "<head>",
+      "answer_2": "<html>",
+      "answer_3": "<body>",
+      "answer_4": "<footer>",
+      "right_answer": "<body>"
+    },
+    {
+      "question": "What tag is used to create an ordered list?",
+      "answer_1": "<ul>",
+      "answer_2": "<ol>",
+      "answer_3": "<li>",
+      "answer_4": "<list>",
+      "right_answer": "<ol>"
+    },
+    {
+      "question": "Which attribute specifies the URL of a link?",
+      "answer_1": "href",
+      "answer_2": "src",
+      "answer_3": "link",
+      "answer_4": "url",
+      "right_answer": "href"
+    },
+    {
+      "question": "How do you create a checkbox in HTML?",
+      "answer_1": "<input type='checkbox'>",
+      "answer_2": "<checkbox>",
+      "answer_3": "<input type='check'>",
+      "answer_4": "<input checkbox>",
+      "right_answer": "<input type='checkbox'>"
+    },
+    {
+      "question": "Which attribute is used to specify an element’s unique identifier?",
+      "answer_1": "class",
+      "answer_2": "id",
+      "answer_3": "name",
+      "answer_4": "unique",
+      "right_answer": "id"
+    },
+   
+    {
+      "question": "Which element is used to specify a footer for a document or section?",
+      "answer_1": "<bottom>",
+      "answer_2": "<footer>",
+      "answer_3": "<section-footer>",
+      "answer_4": "<foot>",
+      "right_answer": "<footer>"
+    },
+    {
+      "question": "How do you add a comment in HTML?",
+      "answer_1": "// This is a comment",
+      "answer_2": "<!-- This is a comment -->",
+      "answer_3": "/* This is a comment */",
+      "answer_4": "# This is a comment",
+      "right_answer": "<!-- This is a comment -->"
+    },
+    {
+      "question": "What is the purpose of the <head> section?",
+      "answer_1": "Contains metadata and links to scripts and styles",
+      "answer_2": "Contains the visible content",
+      "answer_3": "Defines the footer",
+      "answer_4": "Defines the main article",
+      "right_answer": "Contains metadata and links to scripts and styles"
+    },
+    {
+      "question": "Which attribute specifies the language of the document?",
+      "answer_1": "lang",
+      "answer_2": "language",
+      "answer_3": "xml:lang",
+      "answer_4": "locale",
+      "right_answer": "lang"
+    },
+    {
+      "question": "Which tag is deprecated in HTML5?",
+      "answer_1": "<font>",
+      "answer_2": "<b>",
+      "answer_3": "<strong>",
+      "answer_4": "<i>",
+      "right_answer": "<font>"
+    },
+    {
+      "question": "What tag is used to define a table header?",
+      "answer_1": "<thead>",
+      "answer_2": "<th>",
+      "answer_3": "<header>",
+      "answer_4": "<tr>",
+      "right_answer": "<th>"
+    },
+    {
+      "question": "How do you create a dropdown list in HTML?",
+      "answer_1": "<select>",
+      "answer_2": "<dropdown>",
+      "answer_3": "<list>",
+      "answer_4": "<option>",
+      "right_answer": "<select>"
+    },
+    {
+      "question": "What is the default display value for the <span> tag?",
+      "answer_1": "block",
+      "answer_2": "inline",
+      "answer_3": "inline-block",
+      "answer_4": "none",
+      "right_answer": "inline"
+    },
+    {
+      "question": "Which tag is used to define a section in HTML5?",
+      "answer_1": "<section>",
+      "answer_2": "<div>",
+      "answer_3": "<article>",
+      "answer_4": "<header>",
+      "right_answer": "<section>"
+    },
+    {
+      "question": "Which tag is used to define navigation links?",
+      "answer_1": "<nav>",
+      "answer_2": "<navigation>",
+      "answer_3": "<menu>",
+      "answer_4": "<links>",
+      "right_answer": "<nav>"
+    },
+    {
+      "question": "Which tag is used to insert a horizontal line?",
+      "answer_1": "<hr>",
+      "answer_2": "<line>",
+      "answer_3": "<break>",
+      "answer_4": "<hl>",
+      "right_answer": "<hr>"
+    },
+    {
+      "question": "Which attribute specifies the character encoding for the HTML document?",
+      "answer_1": "charset",
+      "answer_2": "encoding",
+      "answer_3": "codepage",
+      "answer_4": "lang",
+      "right_answer": "charset"
+    },
+    {
+      "question": "What is the use of the <label> tag?",
+      "answer_1": "Defines a label for an <input> element",
+      "answer_2": "Creates a caption for a table",
+      "answer_3": "Defines a title",
+      "answer_4": "Defines a paragraph",
+      "right_answer": "Defines a label for an <input> element"
+    },
+    {
+      "question": "Which tag is used to define emphasized text?",
+      "answer_1": "<em>",
+      "answer_2": "<strong>",
+      "answer_3": "<i>",
+      "answer_4": "<b>",
+      "right_answer": "<em>"
+    },
+    {
+      "question": "How do you create a radio button in HTML?",
+      "answer_1": "<input type='radio'>",
+      "answer_2": "<radio>",
+      "answer_3": "<input radio>",
+      "answer_4": "<button>",
+      "right_answer": "<input type='radio'>"
+    },
+    {
+      "question": "Which attribute specifies that an input field must be filled out?",
+      "answer_1": "required",
+      "answer_2": "validate",
+      "answer_3": "fill",
+      "answer_4": "mandatory",
+      "right_answer": "required"
+    },
+    {
+      "question": "What is the purpose of the <form> element?",
+      "answer_1": "Defines a form for user input",
+      "answer_2": "Creates a table",
+      "answer_3": "Defines a section",
+      "answer_4": "Creates a link",
+      "right_answer": "Defines a form for user input"
+    },
+    {
+      "question": "How do you embed a YouTube video in HTML?",
+      "answer_1": "<video src='youtube.com'>",
+      "answer_2": "<embed youtube>",
+      "answer_3": "<iframe src='https://www.youtube.com/embed/videoid'></iframe>",
+      "answer_4": "<youtube>",
+      "right_answer": "<iframe src='https://www.youtube.com/embed/videoid'></iframe>"
+    },
+    {
+      "question": "Which attribute is used to open a link in a new tab?",
+      "answer_1": "target='_blank'",
+      "answer_2": "newtab",
+      "answer_3": "open='new'",
+      "answer_4": "tab='_new'",
+      "right_answer": "target='_blank'"
+    }
+  ],
+  "css": [
+    {
+      "question": "How do you select an element with id 'header' in CSS?",
+      "answer_1": ".header",
+      "answer_2": "#header",
+      "answer_3": "*header",
+      "answer_4": "header",
+      "right_answer": "#header"
+    },
+    {
+      "question": "Which property is used to change the background color?",
+      "answer_1": "color",
+      "answer_2": "bgcolor",
+      "answer_3": "background-color",
+      "answer_4": "backgroundColor",
+      "right_answer": "background-color"
+    },
+    {
+      "question": "How do you make text bold in CSS?",
+      "answer_1": "font-style: bold;",
+      "answer_2": "text-weight: bold;",
+      "answer_3": "font-weight: bold;",
+      "answer_4": "font:bold;",
+      "right_answer": "font-weight: bold;"
+    },
+    {
+      "question": "Which CSS property controls the text size?",
+      "answer_1": "font-size",
+      "answer_2": "text-size",
+      "answer_3": "font-style",
+      "answer_4": "text-style",
+      "right_answer": "font-size"
+    },
+    {
+      "question": "How do you add a comment in CSS?",
+      "answer_1": "// this is a comment",
+      "answer_2": "<!-- this is a comment -->",
+      "answer_3": "/* this is a comment */",
+      "answer_4": "' this is a comment",
+      "right_answer": "/* this is a comment */"
+    },
+    {
+      "question": "Which property is used to change the font of an element?",
+      "answer_1": "font-family",
+      "answer_2": "font-style",
+      "answer_3": "font-weight",
+      "answer_4": "font-text",
+      "right_answer": "font-family"
+    },
+    {
+      "question": "How do you center a block element horizontally?",
+      "answer_1": "margin: 0 auto;",
+      "answer_2": "text-align: center;",
+      "answer_3": "align-center: true;",
+      "answer_4": "center-block: yes;",
+      "right_answer": "margin: 0 auto;"
+    },
+    {
+      "question": "Which property controls the spacing between lines of text?",
+      "answer_1": "line-spacing",
+      "answer_2": "line-height",
+      "answer_3": "text-height",
+      "answer_4": "spacing-line",
+      "right_answer": "line-height"
+    },
+    {
+      "question": "What is the default display value of a <div> element?",
+      "answer_1": "inline",
+      "answer_2": "block",
+      "answer_3": "inline-block",
+      "answer_4": "none",
+      "right_answer": "block"
+    },
+    {
+      "question": "How do you make a list with no bullets?",
+      "answer_1": "list-style-type: none;",
+      "answer_2": "list: no-bullets;",
+      "answer_3": "list-decoration: none;",
+      "answer_4": "bullet: none;",
+      "right_answer": "list-style-type: none;"
+    },
+    {
+      "question": "How do you apply a background image in CSS?",
+      "answer_1": "background-image: url('image.jpg');",
+      "answer_2": "background: image('image.jpg');",
+      "answer_3": "bg-image: url('image.jpg');",
+      "answer_4": "image-background: url('image.jpg');",
+      "right_answer": "background-image: url('image.jpg');"
+    },
+    {
+      "question": "Which property is used to make elements float to the right?",
+      "answer_1": "float: left;",
+      "answer_2": "float: right;",
+      "answer_3": "align: right;",
+      "answer_4": "position: right;",
+      "right_answer": "float: right;"
+    },
+    {
+      "question": "How do you set the font size to 16 pixels?",
+      "answer_1": "font-size: 16;",
+      "answer_2": "font-size: 16px;",
+      "answer_3": "text-size: 16px;",
+      "answer_4": "text-font-size: 16px;",
+      "right_answer": "font-size: 16px;"
+    },
+    {
+      "question": "What does 'opacity' property do?",
+      "answer_1": "Sets transparency level of an element",
+      "answer_2": "Sets color saturation",
+      "answer_3": "Controls font size",
+      "answer_4": "Adds shadow",
+      "right_answer": "Sets transparency level of an element"
+    },
+    {
+      "question": "How do you make text italic in CSS?",
+      "answer_1": "font-style: italic;",
+      "answer_2": "text-style: italic;",
+      "answer_3": "font-weight: italic;",
+      "answer_4": "text-italic: true;",
+      "right_answer": "font-style: italic;"
+    },
+    {
+      "question": "Which property controls the space outside the border of an element?",
+      "answer_1": "margin",
+      "answer_2": "padding",
+      "answer_3": "border",
+      "answer_4": "spacing",
+      "right_answer": "margin"
+    },
+    {
+      "question": "How to make a flex container in CSS?",
+      "answer_1": "display: block;",
+      "answer_2": "display: flex;",
+      "answer_3": "flex-container: true;",
+      "answer_4": "flex: true;",
+      "right_answer": "display: flex;"
+    },
+    {
+      "question": "How to hide an element in CSS?",
+      "answer_1": "display: none;",
+      "answer_2": "visibility: hidden;",
+      "answer_3": "opacity: 0;",
+      "answer_4": "hide: true;",
+      "right_answer": "display: none;"
+    },
+    {
+      "question": "What does 'z-index' control?",
+      "answer_1": "Stack order of elements",
+      "answer_2": "Size of elements",
+      "answer_3": "Position relative to viewport",
+      "answer_4": "Visibility",
+      "right_answer": "Stack order of elements"
+    },
+    {
+      "question": "How do you make text uppercase in CSS?",
+      "answer_1": "text-transform: uppercase;",
+      "answer_2": "text-case: uppercase;",
+      "answer_3": "text-style: uppercase;",
+      "answer_4": "text-uppercase: true;",
+      "right_answer": "text-transform: uppercase;"
+    },
+    {
+      "question": "How do you change the cursor to pointer on hover?",
+      "answer_1": "cursor: pointer;",
+      "answer_2": "cursor: hand;",
+      "answer_3": "cursor: click;",
+      "answer_4": "cursor: hover;",
+      "right_answer": "cursor: pointer;"
+    },
+    {
+      "question": "What is the default position value in CSS?",
+      "answer_1": "static",
+      "answer_2": "relative",
+      "answer_3": "absolute",
+      "answer_4": "fixed",
+      "right_answer": "static"
+    },
+    {
+      "question": "Which property adds space inside an element's border?",
+      "answer_1": "margin",
+      "answer_2": "padding",
+      "answer_3": "border-spacing",
+      "answer_4": "spacing",
+      "right_answer": "padding"
+    },
+    {
+      "question": "How to set element width to 100%?",
+      "answer_1": "width: 100vw;",
+      "answer_2": "width: 100%;",
+      "answer_3": "width: auto;",
+      "answer_4": "width: full;",
+      "right_answer": "width: 100%;"
+    },
+    {
+      "question": "How to make a rounded corner in CSS?",
+      "answer_1": "border-radius: 5px;",
+      "answer_2": "border-round: 5px;",
+      "answer_3": "corner-radius: 5px;",
+      "answer_4": "round-corner: 5px;",
+      "right_answer": "border-radius: 5px;"
+    },
+    {
+      "question": "How to create a grid container?",
+      "answer_1": "display: grid;",
+      "answer_2": "display: block;",
+      "answer_3": "display: flex;",
+      "answer_4": "display: table;",
+      "right_answer": "display: grid;"
+    },
+    {
+      "question": "Which CSS property is used to control overflow?",
+      "answer_1": "overflow",
+      "answer_2": "flow-over",
+      "answer_3": "overflow-control",
+      "answer_4": "overflowed",
+      "right_answer": "overflow"
+    },
+    {
+      "question": "What does 'position: fixed' do?",
+      "answer_1": "Positions element relative to viewport",
+      "answer_2": "Positions element relative to parent",
+      "answer_3": "Positions element relative to normal flow",
+      "answer_4": "Removes element from document flow",
+      "right_answer": "Positions element relative to viewport"
+    },
+    {
+      "question": "Which property sets the text color?",
+      "answer_1": "text-color",
+      "answer_2": "color",
+      "answer_3": "font-color",
+      "answer_4": "font-style",
+      "right_answer": "color"
+    },
+    {
+      "question": "How do you set the visibility of an element?",
+      "answer_1": "visibility: visible;",
+      "answer_2": "display: block;",
+      "answer_3": "visibility: hidden;",
+      "answer_4": "display: none;",
+      "right_answer": "visibility: visible;"
+    },
+    {
+      "question": "Which CSS unit is relative to the font size of the root element?",
+      "answer_1": "em",
+      "answer_2": "rem",
+      "answer_3": "px",
+      "answer_4": "pt",
+      "right_answer": "rem"
+    }
+  ],
+  "javaScript": [
+    {
+      "question": "How do you declare a variable in JavaScript?",
+      "answer_1": "var myVar;",
+      "answer_2": "variable myVar;",
+      "answer_3": "v myVar;",
+      "answer_4": "declare myVar;",
+      "right_answer": "var myVar;"
+    },
+    {
+      "question": "Which method is used to print something to the console?",
+      "answer_1": "console.print()",
+      "answer_2": "console.log()",
+      "answer_3": "print.console()",
+      "answer_4": "log.console()",
+      "right_answer": "console.log()"
+    },
+    {
+      "question": "How do you write a function in JavaScript?",
+      "answer_1": "function = myFunction() {}",
+      "answer_2": "function myFunction() {}",
+      "answer_3": "def myFunction() {}",
+      "answer_4": "func myFunction() {}",
+      "right_answer": "function myFunction() {}"
+    },
+    {
+      "question": "How do you create a string in JavaScript?",
+      "answer_1": "var str = 'Hello';",
+      "answer_2": "var str = Hello;",
+      "answer_3": "var str = Hello'';",
+      "answer_4": "var str = (Hello);",
+      "right_answer": "var str = 'Hello';"
+    },
+    {
+      "question": "Which operator is used for strict equality comparison?",
+      "answer_1": "==",
+      "answer_2": "=",
+      "answer_3": "===",
+      "answer_4": "!=",
+      "right_answer": "==="
+    },
+    {
+      "question": "How do you add a comment in JavaScript?",
+      "answer_1": "// This is a comment",
+      "answer_2": "<!-- This is a comment -->",
+      "answer_3": "# This is a comment",
+      "answer_4": "/* This is a comment */",
+      "right_answer": "// This is a comment"
+    },
+    {
+      "question": "What will this output: console.log(typeof 123); ?",
+      "answer_1": "number",
+      "answer_2": "string",
+      "answer_3": "object",
+      "answer_4": "undefined",
+      "right_answer": "number"
+    },
+    {
+      "question": "Which keyword is used to define a constant variable?",
+      "answer_1": "var",
+      "answer_2": "const",
+      "answer_3": "let",
+      "answer_4": "constant",
+      "right_answer": "const"
+    },
+    {
+      "question": "How do you create an array in JavaScript?",
+      "answer_1": "var arr = ();",
+      "answer_2": "var arr = [];",
+      "answer_3": "var arr = {};",
+      "answer_4": "var arr = <>;",
+      "right_answer": "var arr = [];"
+    },
+    {
+      "question": "Which event occurs when a user clicks on an HTML element?",
+      "answer_1": "onclick",
+      "answer_2": "onmouseclick",
+      "answer_3": "onchange",
+      "answer_4": "onmouseover",
+      "right_answer": "onclick"
+    },
+    {
+      "question": "What does '===' operator mean in JavaScript?",
+      "answer_1": "Checks equality without type coercion",
+      "answer_2": "Checks inequality",
+      "answer_3": "Assigns a value",
+      "answer_4": "Checks equality with type coercion",
+      "right_answer": "Checks equality without type coercion"
+    },
+    {
+      "question": "How do you write an arrow function?",
+      "answer_1": "var func = () => {}",
+      "answer_2": "var func => {}",
+      "answer_3": "function => func() {}",
+      "answer_4": "function() => {}",
+      "right_answer": "var func = () => {}"
+    },
+    {
+      "question": "Which method converts a JSON string to an object?",
+      "answer_1": "JSON.parse()",
+      "answer_2": "JSON.stringify()",
+      "answer_3": "JSON.convert()",
+      "answer_4": "JSON.toObject()",
+      "right_answer": "JSON.parse()"
+    },
+    {
+      "question": "How to add an element to the end of an array?",
+      "answer_1": "arr.push(element)",
+      "answer_2": "arr.add(element)",
+      "answer_3": "arr.insert(element)",
+      "answer_4": "arr.append(element)",
+      "right_answer": "arr.push(element)"
+    },
+    {
+      "question": "Which keyword is used to declare a block-scoped variable?",
+      "answer_1": "var",
+      "answer_2": "let",
+      "answer_3": "const",
+      "answer_4": "block",
+      "right_answer": "let"
+    },
+    {
+      "question": "What does 'typeof null' return?",
+      "answer_1": "null",
+      "answer_2": "object",
+      "answer_3": "undefined",
+      "answer_4": "boolean",
+      "right_answer": "object"
+    },
+    {
+      "question": "How to check if a variable is an array?",
+      "answer_1": "typeof variable === 'array'",
+      "answer_2": "variable instanceof Array",
+      "answer_3": "Array.isArray(variable)",
+      "answer_4": "isArray(variable)",
+      "right_answer": "Array.isArray(variable)"
+    },
+    {
+      "question": "What will '0 == false' return?",
+      "answer_1": "true",
+      "answer_2": "false",
+      "answer_3": "undefined",
+      "answer_4": "error",
+      "right_answer": "true"
+    },
+    {
+      "question": "Which method removes the last element from an array?",
+      "answer_1": "pop()",
+      "answer_2": "shift()",
+      "answer_3": "remove()",
+      "answer_4": "delete()",
+      "right_answer": "pop()"
+    },
+    {
+      "question": "How to convert a number to a string?",
+      "answer_1": "num.toString()",
+      "answer_2": "String(num)",
+      "answer_3": "num + ''",
+      "answer_4": "All of the above",
+      "right_answer": "All of the above"
+    },
+    {
+      "question": "What does the 'this' keyword refer to?",
+      "answer_1": "The current object",
+      "answer_2": "The global object",
+      "answer_3": "The function itself",
+      "answer_4": "Undefined",
+      "right_answer": "The current object"
+    },
+    {
+      "question": "What is a closure in JavaScript?",
+      "answer_1": "A function bundled with its lexical environment",
+      "answer_2": "A loop",
+      "answer_3": "A variable",
+      "answer_4": "An object",
+      "right_answer": "A function bundled with its lexical environment"
+    },
+    {
+      "question": "What is event bubbling?",
+      "answer_1": "Event propagates from child to parent",
+      "answer_2": "Event propagates from parent to child",
+      "answer_3": "Event triggers only once",
+      "answer_4": "Event stops propagation",
+      "right_answer": "Event propagates from child to parent"
+    },
+    {
+      "question": "Which method is used to stop event propagation?",
+      "answer_1": "stopPropagation()",
+      "answer_2": "preventDefault()",
+      "answer_3": "stopEvent()",
+      "answer_4": "cancelPropagation()",
+      "right_answer": "stopPropagation()"
+    },
+    {
+      "question": "How to make an HTTP GET request in JavaScript?",
+      "answer_1": "fetch(url)",
+      "answer_2": "http.get(url)",
+      "answer_3": "ajax.get(url)",
+      "answer_4": "request.get(url)",
+      "right_answer": "fetch(url)"
+    },
+    {
+      "question": "Which keyword creates a promise?",
+      "answer_1": "async",
+      "answer_2": "await",
+      "answer_3": "new Promise()",
+      "answer_4": "promise",
+      "right_answer": "new Promise()"
+    },
+    {
+      "question": "How to parse an integer from a string?",
+      "answer_1": "parseInt()",
+      "answer_2": "parseInteger()",
+      "answer_3": "int()",
+      "answer_4": "integer.parse()",
+      "right_answer": "parseInt()"
+    },
+    {
+      "question": "What is the output of 'typeof NaN'?",
+      "answer_1": "number",
+      "answer_2": "NaN",
+      "answer_3": "undefined",
+      "answer_4": "object",
+      "right_answer": "number"
+    },
+    {
+      "question": "How do you detect the browser window size?",
+      "answer_1": "window.size",
+      "answer_2": "window.innerWidth and window.innerHeight",
+      "answer_3": "document.size",
+      "answer_4": "screen.size",
+      "right_answer": "window.innerWidth and window.innerHeight"
+    },
+    {
+      "question": "How to add an event listener?",
+      "answer_1": "element.addEventListener('click', callback)",
+      "answer_2": "element.on('click', callback)",
+      "answer_3": "element.attachEvent('click', callback)",
+      "answer_4": "element.listen('click', callback)",
+      "right_answer": "element.addEventListener('click', callback)"
+    },
+    {
+      "question": "What is NaN in JavaScript?",
+      "answer_1": "Not a Number",
+      "answer_2": "Null",
+      "answer_3": "Undefined",
+      "answer_4": "Zero",
+      "right_answer": "Not a Number"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Specify the client ID wich I created for this app in the Google Developers Console -->
+
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="register.css" />
+    
+          <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+</head>
+<script src="init.js"></script>
+<body>
+    <div class="container">
+        <form id="login" class="form">
+            <h1 class="form-title">Login</h1>
+            <div class="form-message"></div>
+            <div class="form-group">
+                <input type="email" class="form-input" name="loginEmail" autofocus placeholder="Email" />
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-input" name="loginPassword" autofocus placeholder="Password" />
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Log in</button>
+            <p class="form-text">
+                <a href="#" class="form-link">Forgot your password ?</a>
+            </p>
+            <p class="form-text">
+                <a href="./" class="form-link" id="linkCreateAccount">Dont have an account? create account</a>
+            </p>
+        </form>
+        <form id="createAccount" class="form form--hidden">
+            <h1 class="form-title">Create Account</h1>
+            <div class="form-message"></div>
+            <div class="form-group">
+                <input type="text" class="form-input" name="RegisterUsername" autofocus placeholder="Username" />
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-input" name="RegisterEmailAddress" autofocus
+                    placeholder="Email Address" />
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-input" name="RegisterPassword" autofocus placeholder="Password" />
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-input" name="RegisterConfirmPassword" autofocus
+                    placeholder=" Confirm Password" />
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Sign Up</button>
+            <p class="form-text">
+                <a href="./" class="form-link" id="linkLogin">Already have an account? Login</a>
+            </p>
+        </form>
+        <div class="login-from-accountes">
+            <div  id="g_id_onload"
+                data-client_id="248322648442-q7ng6atkb31cmppebb1sdb03i4elfc40.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse" data-auto_prompt="false">
+              </div>
+
+            <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline"
+                data-text="signin_with" data-size="large" ></div>
+    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button> -->
+
+                 <button id="fb-button">
+           <i class="fa-brands fa-facebook" style="color: #065ff9;"></i>
+          <span> Sign In with facebook</span>
+         </button> 
+         <p id="status"></p>
+    </div>
+     
+    </div>
+    <!-- include the Google Platform Library to integrating the  Google sign in  -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- include the sweetalert Library to integrating the  Google sign in  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="register.js"></script>
+    <!-- Facebook SDK
+    <script  crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+</body>
+
+</html>

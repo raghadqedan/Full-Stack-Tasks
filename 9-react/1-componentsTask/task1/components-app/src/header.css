@@ -1,0 +1,16 @@
+
+.header{
+        background-color:#017575;
+        border-radius: 4px;
+        box-shadow:  4px 20px #fff;
+    
+        height: 100px;
+         display: flex;
+        align-items: center;
+        justify-content: center; 
+
+}
+.headerTitle{
+    color: white;
+ 
+}

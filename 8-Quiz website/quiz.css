@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
+}
+:root{
+       --border-radius:4px;
+    --main-color: #437c90  ;
+      --secondary-color:#559db7;
+
+
+}
+
+
+
+/* f3eff5
+7DAF9C
+23967F
+db93b0
+D4AF37
+00BFA6
+
+c6ad94
+18a999
+
+18a999
+a8d0ca
+
+6cacd78b
+
+ --main-color: #58a0ba  ;
+      --secondary-color:#67b8d5;
+
+        --main-color: #09b6ea7c  ;
+      --secondary-color:#c1dbe3;
+
+        --main-color: #9eadc840  ;
+      --secondary-color:#9eadc8;
+
+            --main-color: #735290  ;
+      --secondary-color:#7352909a;
+
+           --main-color: #8a4f7d  ;
+      --secondary-color:#8a4f7db4;
+
+            --main-color: #a491d3  ;
+      --secondary-color:#a491d3b1;
+
+        --main-color: #d4a0a7  ;
+      --secondary-color:#d4a0a7c3;
+
+           --main-color: #eb9386bc  ;
+      --secondary-color:#eb93867d;
+
+            --main-color: #a78682  ;
+      --secondary-color:#a78682ca;
+
+         --main-color: #a78682bb  ;
+      --secondary-color:#eef0f28e;
+
+            --main-color: #6b6055  ;
+      --secondary-color:#6b6055;
+          
+      --main-color: #00c1cbc3  ;
+      --secondary-color:#00c1cb77;
+
+             --main-color: #6b6055  ;
+      --secondary-color:#6b6055cb;
+   
+ */
+body{
+    font-family: "Inter", serif;
+   font-size: 18px;
+   color:#fff ;
+   /* background-color: #868b8948  ; */
+    background: #868b8948;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column-reverse;
+   padding-top: 2rem; 
+    
+
+   
+}
+.quiz-app{
+    width:800px;
+    margin-top: 10px;
+    background-color:var(--secondary-color);
+    padding:1rem;
+    border-radius: var(--border-radius);
+   
+    
+    
+  
+    
+}
+
+.quiz-app .quiz-info{
+display:flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 0.7rem;
+background-color:var(--main-color);
+margin-bottom:0.7rem;
+border-radius: var(--border-radius);
+color: white;
+}
+
+.quiz-area{
+padding: 1rem;
+border-radius: var(--border-radius);
+background-color:var(--main-color);
+
+}
+
+.answer-area{
+    padding: 1.5rem;  
+   
+}
+.answer-area .answer{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    color: black;
+    
+}
+.quiz-area >button{
+    width: 50%;
+    padding: 0.7rem;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+    outline: none;
+    margin: 1rem 12.5rem;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.314);
+
+}
+.quiz-area >button:hover{
+    background-color:#e0e0e0;
+    color: var(--main-color);
+    
+
+}
+
+
+.quiz-area .bullets{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff ;
+    border-radius: var(--border-radius);
+  
+    
+}
+.quiz-area .bullets .spans{
+   display: flex;
+     flex-wrap: wrap;
+
+  
+
+}
+.quiz-area .bullets .spans span{
+    width: 20px;
+    height: 20px;
+      border-radius: 50%;
+background-color:#4b45343f ;
+      margin-right: 0.3rem;
+}
+.quiz-area .bullets .spans span.on{
+    background-color: var(--main-color);
+}
+.quiz-area .bullets .count-down{
+    color: black;
+}
+.count-down.warning{
+      border-radius: 12px;
+    padding: 0.2rem 0.5rem;
+      animation: blink 1s  ;
+}
+@keyframes blink {
+     0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+
+
+@media (max-width:767px)  {
+   .quiz-app{
+    width:90vw;
+    margin-top: 100px;
+}
+
+.quiz-area{
+padding: 0.5rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+
+.answer-area{
+    padding: 0.5rem; 
+    width: 100%; 
+}
+.quiz-area .bullets {
+    width: 100%;
+  flex-wrap: wrap;
+}
+
+}
+
+
+@media(max-width:992px){
+  .quiz-app{
+    width:90vw;
+    height: 100%;
+    margin: unset;
+}
+
+.quiz-area{
+padding: 0.5rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+
+.answer-area{
+    padding: 0.5rem; 
+    width: 100%; 
+}
+.quiz-area .bullets {
+  width: 100%;
+}
+
+
+}
+
+
+@media (max-width:412px)  {
+
+
+
+}
+
+

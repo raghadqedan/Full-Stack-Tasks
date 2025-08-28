@@ -1,0 +1,168 @@
+body{
+ --main-color: #4b4534;
+  --main-color-alt:#656e79 ;
+  --main-color-dark:#8aa1b7;
+  --border-radius:4px;
+  --color-success:#4bb544;
+  --color-error:#cc3333;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Inter', sans-serif;
+   font-size: 18px;
+   height: 100vh;
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+   background-image:url(img/about\ us\ image.jpeg) ;
+   background-size: cover;
+}
+.container{
+  width:400px;
+  max-width: 400px;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius:var(--border-radius) ;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgb(0, 0,0,0.2);
+}
+/* to  alternative between login and register form */
+.form--hidden{
+  display: none;
+}
+
+
+.form> *:first-child
+{
+  margin-top: 0;
+  color: #4b4534;
+
+}
+.form> *:last-child{
+  margin-bottom: 0;
+}
+.form-title{
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+.form-message{
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+.form_message-error{
+  color: var(--color-error);
+}
+.form_message-success{
+  color:#4bb544;
+}
+.form-group{
+  margin-bottom: 1rem;
+}
+.form-input{
+
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dddddd;
+  border-radius: var(--border-radius);
+  background-color: #eeeeee;
+  outline: none;
+  transition: background 0.2s,border-color 0.2s;
+}
+.form-input:focus{
+  border-color: var(--main-color);
+  background-color: #ffffff;
+}
+.form_input-error{
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+.form-input-error-message{
+  color: var(--color-error);
+  font-size: 0.8rem;
+  margin-top:0.5rem;
+}
+.form-button{
+  width: 100%;
+  padding: 1rem 2rem ;
+  background-color: var(--main-color);
+  border-radius: var(--border-radius);
+  border:none;
+  color:#ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  
+  
+}
+.form-button:hover{
+  background-color: var(--main-color-dark);
+  
+
+}
+.form-button:active {
+transform: scale(.98);
+}
+.form-text{
+  text-align: center;
+
+}
+.form-link{
+    text-decoration: none;
+  color: var(--main-color-alt);
+    font-size: 1rem;
+}
+.form-link:hover{
+  text-decoration: underline;
+
+}
+.login-from-accountes{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.swal2-popup {
+  width: 600px !important;   /* العرض */
+  padding: 0.8rem 0.5rem !important;  /* المسافة الداخلية */
+  font-size: 18px;
+}
+
+#fb-button{
+    width:223px; 
+    height: 40px; 
+    font-size: 12px;
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+    border:2px solid  rgba(128, 128, 128, 0.147);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+   
+    
+   
+}
+
+#fb-button i{
+font-size: 22px;
+margin-left: 4px;
+
+
+
+}
+#fb-button:hover{
+  background-color: #888e9014;
+
+}
+.login-from-accountes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+          <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <style>
+   /* CSS reset */
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html { font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem;
+  padding-left: 100rem;
+
+}
+.card{
+    width:15rem;
+    height: 15rem;
+     box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
+    position: relative;
+    transition: all 1s ease;
+
+}
+/* غالاف الدفتر الامامي اللذي سوف يتم فتحه */
+.flip-card{
+    width: 15rem;
+    height: 15rem;
+    position:absolute;
+   left: 0;
+    visibility: hidden;
+    z-index: 100;
+     perspective: 100rem; 
+}
+.flip-card >*{
+    visibility: visible;
+}
+.flip-card__container{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    transform-origin: left;
+    transform-style:preserve-3d ;
+    transition: all 1s ease;
+}
+.card-front{
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; 
+     background-color: white;
+}
+.card-front__tp {
+    background-color:#ff9800 ;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.75rem;
+     clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+
+
+
+}
+.card-front__icon{
+    font-size: 1.8rem;
+    color: #fafbfa;
+}
+.card-front__bt{
+    text-align: center;
+}
+
+.card-front__heading{
+font-size: 1.8rem;
+color: #fff;
+}
+.card-front__text-view{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #ff9800;
+    margin-top: 0.5rem;
+}
+/* inside page of the book  */
+.inside-page{
+
+    right: 0;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+  background-color: #ffffffee;
+  box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
+  padding: 1rem;
+  transition: all 1s ease;
+    z-index: 1;
+    
+}
+.inside-page__container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+   right: 0;
+   
+     transition: all 1s ease;
+    
+
+}
+.inside-page__heading{
+    font-size: 1.8rem;
+color: #ff9800;
+
+}
+.inside-page__text{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.score-image{
+    width:70px;
+    height: 60px;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+   
+}
+
+.card:hover {
+  box-shadow:
+  -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.75);
+  width: 20rem;
+}
+.card:hover .flip-card__container {
+  transform: rotateY(-180deg);
+}
+.card:hover .inside-page {
+  box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
+}
+
+
+
+   </style>
+</head>
+<body>
+<div class="card">
+  <!-- الغلاف الأمامي (رح يفتح مثل دفتر) -->
+  <div class="flip-card">
+    <div class="flip-card__container">
+      <div class="card-front">
+        <div class="card-front__tp">
+          <i class="card-front__icon fa-solid fa-file-pen"></i>
+          <h2 class="card-front__heading">HTML </h2>
+        </div>
+
+        <div class="card-front__bt">
+          <p class="card-front__text-view">
+            View your score
+          </p>
+        </div>
+      </div>
+      <!-- مافي card-back؛ لأننا بدفتر مش بطاقة بتتقلب -->
+    </div>
+  </div>
+
+  <!-- الصفحة الداخلية (دفتر) -->
+  <div class="inside-page">
+    <div class="inside-page__container">
+       <img src="/img/507c1924d2e8373890932dd0c4038a68.jpg" alt="" class="score-image">
+        <p class="inside-page__text">Congrats</p>
+       <h3 class="inside-page__heading">Score : 80</h3>
+     
+     
+    </div>
+  </div> 
+</div>
+</body>
+
+</html> 

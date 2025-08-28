@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <p>Pro Quiz </p>
+            </a>
+            <ul class="main-nav">
+                <li><a href="#landing">Home</a> </li>
+                <li><a href="#about-section">about</a> </li>
+                <li><a href="#about-quizzes">Our Quizzes</a> </li>
+                <li class="loginButton"><a href="./register.html" >Login</a> </li>
+                <li class="logoutButton hidden--Element"><a href="./" >Logout</a> </li>
+     
+
+            </ul>
+        </div>
+
+    </header>
+    <!-- End header -->
+    <!-- Start Landing -->
+    <div id='landing' class="landing">
+        <div class="container">
+            <div class="text">
+                <h1 >Welcome To <br /> Pro <span>Quiz</span></h1>
+                <p >You’re one step away from proving your skills. This short quizes will assess your readiness for the
+                    web Development role.
+                    Estimated time: 10 minutes for evert quiz. Give it your best — we’re excited to see what you’ve got!
+                </p>
+                <button class="start-now">Start Now </button>
+            </div>
+            <div class="image">
+                <!-- <img src="img/Online test-amico (1).svg" /> -->
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- End Landing -->
+    <!-- Start video -->
+    <div id="video-section" class="video-section reveal-section">
+        <div class="container">
+            <p class="reveal" >Learn More About ProQuiz </p>
+            <div class="wrapper reveal">
+                <div id="video-player"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End video -->
+     <!-- start about section -->
+
+     <div  id="about-section" class="about-section reveal-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-text reveal">
+                     <p class="title">About Us</p>
+                     <p class="text">
+                         Our online quiz platform is designed to help our company efficiently evaluate Front-End developer candidates in key skills like HTML, CSS, and JavaScript. The system offers candidates a smooth, interactive testing experience — starting from registration and login, through answering carefully crafted questions one at a time, to receiving detailed feedback on their performance. This platform ensures a fair and consistent hiring process, helping us identify the best talent with ease and confidence.
+                     </p>
+                      <span class="read-more " >Read more</span>
+                </div>
+                <div class="about-card reveal">
+                   
+                            <img src="/img/ChatGPT Image Aug 18, 2025, 07_12_44 PM.png" alt="About image">
+                    </div>
+        
+                </div>
+            </div>
+           
+     </div>
+
+
+
+
+
+
+      <!-- End about section  -->
+    <!-- Start Our quizzes -->
+    <div id='about-quizzes' class="quizzes-section reveal-section">
+        <div class="container">
+            <p class="reveal">About Our Quizzes</p>
+            <div class="main-container">
+                <!-- card 1 -->
+                <div class="card-container reveal">
+                    <div class="card">
+                        <div class="front">
+                          <i class="fa-brands fa-css3-alt"   ></i>
+                            <h3>CSS Quiz</h3>
+                        </div>
+                        <div class="back">
+                            <p> Ready to style like a pro?
+                                This quiz challenges your grasp on selectors, layouts, and responsiveness using CSS.
+                            </p>
+                            <ul>
+                                <li><i class="fa-solid fa-file-lines" ></i>
+                                    Number of Questions: 10
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-clock" ></i>
+                                    Duration: 10 minutes
+                                </li>
+                            </ul>
+                                     <button id="css">Start Quiz Now </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card 2 -->
+                <div class="card-container reveal">
+                    <div class="card">
+                        <div class="front">
+                            <i class="fa-brands fa-html5" ></i>
+                            <h3>HTML Quiz</h3>
+                        </div>
+                        <div class="back">
+                            <p>Test your knowledge of the backbone of the web — HTML.
+                                This quiz will assess your understanding of elements,
+                                structure, and semantics in web development.</p>
+                            <ul>
+                                <li><i class="fa-solid fa-file-lines" ></i>
+                                    Number of Questions: 10
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-clock" ></i>
+                                    Duration: 10 minutes
+                                </li>
+                            </ul>
+                                     <button id="html">Start Quiz Now </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card-container reveal">
+                    <div class="card">
+                        <div class="front">
+                           <i class="fa-brands fa-square-js" ></i>
+                            <h3>Java Script Quiz</h3>
+                        </div>
+                        <div class="back">
+                            <p> Put your logic to the test!
+                                This quiz evaluates your knowledge of variables, functions,
+                                DOM manipulation, and core JS concepts.
+                            </p>
+                            <ul>
+                                <li><i class="fa-solid fa-file-lines" ></i>
+                                    Number of Questions: 10
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-clock" ></i>
+                                    Duration: 10 minutes
+                                </li>
+
+
+                            </ul>
+                            <button id="javaScript">Start Quiz Now </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- End Our quizzes -->
+<!-- start footer -->
+ <footer>
+    <div class="container">
+     <div class="footer-container">
+        <div class="about-us">
+            <h3>Pro Quiz</h3>
+            <p>platform to hiring top 
+                developers with real-time skill testing</p>
+             <div class="footer-icon">
+            <i  class="fa-brands fa-linkedin  linkedin-icon"></i>
+            <i class="fa-solid fa-envelope email-icon"></i>
+            <i class="fa-brands fa-square-facebook facebook-icon"></i>
+        </div>
+        </div>
+        <div class="quick-link">
+              <h3>Quick Link</h3>
+            <ul>
+                <li> <a href="#landing">Home</a></li>
+                <li>  <a href="#about-section" >About</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+             <h3>contact</h3>
+             <ul>
+                <li><span>Phone:<br></span>029823456</li>
+                <li><span>Email:<br></span>support@companyName.com</li>
+            
+             </ul>
+        </div>
+     </div>
+ <hr>
+ <div class="company-info">
+    <p>company name </p>
+    <p >2025 company name .All rights reserved</p>
+
+ </div>
+   
+    </div>
+ </footer>
+ <!-- End footer -->
+
+        <!-- سكربت YouTube Player API -->
+        <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
+        <script src="script.js"></script>
+</body>
+
+</html>
