@@ -9,6 +9,44 @@
     padding: 0;
     margin: 0;
 }
+
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 135deg;
+    inherits: false;
+}
+.quiz-app {
+/* 
+  background: conic-gradient(
+  from var(--angle, 0deg),
+  #4B4534,
+  #7DAF9C,
+  #f7bfb4,
+  #db93b0,
+  #816363,
+  #4F4C3B
+   
+ 
+  
+
+); */
+  /* animation: glowing-border 10s linear infinite;  */
+
+}
+
+@keyframes glowing-border {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+
+
 .result-overlay{
     position: fixed;
     top: 0;
@@ -157,7 +195,10 @@ td {
        color: #333;
 }
 td.correct{
-    color: black;
+
+    /* color: #139a43; */
+     color: #57cc99;
+
 }
 
 td.wrong{
@@ -183,8 +224,8 @@ td.wrong{
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.314);
 }
 .table-button:hover{
-    background-color:#e0e0e0;
-    color:  var(--main-color);
+    background-color:#5d6b75;
+   
 
 }
 
@@ -246,6 +287,8 @@ font-size: 0.8rem;
 }
 .table-button{
     font-size: 16px;
+
+
 }
 
 }

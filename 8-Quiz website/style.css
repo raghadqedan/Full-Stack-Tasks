@@ -365,14 +365,13 @@ ul {
 .video-section .container #video-player {
     height: 305px;
     width: 635px;
-    box-shadow: 0 0 40px #fff;
-
     border-radius: 6px;
     z-index: 10;
+        box-shadow: 0 0 20px #FACC15
 }
 
 .video-section .container #video-player:hover {
-    transform: scale(1.03);
+    transform: scale(1.05) ;
     box-shadow: 0 0 20px #FACC15
 
 }

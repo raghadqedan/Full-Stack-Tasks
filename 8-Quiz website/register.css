@@ -99,7 +99,8 @@ body{
   
 }
 .form-button:hover{
-  background-color: var(--main-color-dark);
+  background-color:#FACC15;
+  
   
 
 }
@@ -131,36 +132,9 @@ transform: scale(.98);
   font-size: 18px;
 }
 
-#fb-button{
-    width:223px; 
-    height: 40px; 
-    font-size: 12px;
-    background-color: #fff;
-    color:rgb(0, 0, 0);
-    border:2px solid  rgba(128, 128, 128, 0.147);
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 400;
-   
-    
-   
-}
-
-#fb-button i{
-font-size: 22px;
-margin-left: 4px;
 
 
 
-}
-#fb-button:hover{
-  background-color: #888e9014;
-
-}
 .login-from-accountes{
   display: flex;
   flex-direction: column;

@@ -5,8 +5,18 @@
 }
 :root{
        --border-radius:4px;
-    --main-color: #437c90  ;
-      --secondary-color:#559db7;
+    --main-color: #6f7f8b  ;
+      --secondary-color: linear-gradient(
+ to right,
+  #4B4534,
+  #7DAF9C,
+  #f7bfb4,
+  #db93b0,
+  #816363,
+  #4F4C3B,
+  #3E392B
+ 
+);
 
 
 }
@@ -83,18 +93,35 @@ body{
 
    
 }
-.quiz-app{
-    width:800px;
-    margin-top: 10px;
-    background-color:var(--secondary-color);
-    padding:1rem;
-    border-radius: var(--border-radius);
-   
-    
-    
-  
-    
+
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 135deg;
+    inherits: false;
 }
+.quiz-app {
+  width: 800px;
+  margin-top: 10px;
+  
+  padding: 1rem;
+  border-radius: var(--border-radius);
+background: conic-gradient(
+  from 0deg,
+  #64513b,
+ #64513b, 
+ #a47157, 
+ #d8b4a0, #64513b, #8a6f52, #c8a97e,
+  #64513b, #7a5b4e, #b39a9a, #A48165, #64513b
+);
+
+
+
+
+
+}
+
+
 
 .quiz-app .quiz-info{
 display:flex;
@@ -105,6 +132,7 @@ background-color:var(--main-color);
 margin-bottom:0.7rem;
 border-radius: var(--border-radius);
 color: white;
+
 }
 
 .quiz-area{
@@ -124,12 +152,29 @@ background-color:var(--main-color);
     background-color: #f9f9f9;
     border-radius: var(--border-radius);
     color: black;
+    border: 3.5px solid #f9f9f9;
+    display: flex;
+
     
 }
+.answer-area .answer:hover{
+   border: 3.5px solid #8c7556;
+    
+}
+.answer-area .answer input{
+    accent-color: #3E392B;
+    margin-right: 10px;
+}
+.answer label {
+ flex: 90%;
+  height: 100%;
+  cursor: pointer;
+
+}
+
 .quiz-area >button{
     width: 50%;
     padding: 0.7rem;
-    background-color: var(--main-color);
     border-radius: var(--border-radius);
     outline: none;
     margin: 1rem 12.5rem;
@@ -139,11 +184,22 @@ background-color:var(--main-color);
     font-weight: bold;
     color: #ffffff;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.314);
+  background-color: #4F4C3B;
+     /* background: conic-gradient(
+  from var(--angle, 0deg),
+  #4B4534,
+  #7DAF9C,
+  #f7bfb4,
+  #db93b0,
+  #816363,
+  #4F4C3B,
+  #3E392B
+); */
 
 }
 .quiz-area >button:hover{
-    background-color:#e0e0e0;
-    color: var(--main-color);
+     background-color: #3f3d2f;
+   
     
 
 }

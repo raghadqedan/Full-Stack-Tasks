@@ -65,8 +65,8 @@ request.onreadystatechange=function(){
             //check the answer
             checkAnswer(rightAnswer);
             
-             
-           //if  reach to the last question show result
+             setTimeout(()=>{
+ //if  reach to the last question show result
             if(currentIndex >=questionCount-1){
                 showResult(questionCount);
                 clearInterval(countInterval);
@@ -95,6 +95,8 @@ request.onreadystatechange=function(){
             })
         );
 
+             },800)
+          
          })
            
 
@@ -183,14 +185,25 @@ function checkAnswer(rightAnswer){
     let selectedAnswer;
     const radioInputElements=document.getElementsByName('question');
     for(let radioInput of radioInputElements){
+          const answerDiv = radioInput.parentElement;
          if(radioInput.checked){
             selectedAnswer=radioInput.dataset.answer;
-            break;
-         }
+             if(selectedAnswer==rightAnswer){
+                answerDiv.style.borderColor="green"
+                score++;
+                break;
+    }else{
+        answerDiv.style.borderColor="#81171b";
+           for(let radioInput of radioInputElements){
+                 const answerDiv = radioInput.parentElement;
+           if( radioInput.dataset.answer===rightAnswer){
+               answerDiv.style.borderColor="green";
+           }
     }
-    if(selectedAnswer==rightAnswer){
-        score++;
-    } 
+           
+         }
+    }}
+   
 let questionArray=JSON.parse(localStorage.getItem("questionData"))||[];
     let question={
         question: questions[currentIndex].question,

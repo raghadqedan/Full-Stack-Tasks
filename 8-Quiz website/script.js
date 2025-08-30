@@ -118,7 +118,7 @@ let player;
     console.log(window.innerWidth)
 
     player=new YT.Player('video-player', {
-      videoId: 'pRcZnnHFeuQ', // Id video اللي بدنا نعرضه 
+      videoId: 'kFNqUlKxn2s', // Id video اللي بدنا نعرضه 
       playerVars: {
         autoplay: 0,       // 1 للتشغيل التلقائي، 0 للتشغيل اليدوي
         controls: 1        // عرض أزرار التحكم (تشغيل، إيقاف)
