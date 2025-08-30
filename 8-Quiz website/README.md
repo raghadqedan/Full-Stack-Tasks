@@ -5,12 +5,12 @@ This project allows users to test their knowledge through  interactive quizzes w
 
 ---
 
-## 🚀 Features
-- Multiple choice questions
-- Progress tracking
-- Score calculation
-- Responsive design
-
+## ✨ Features
+- 🎨 Clean and responsive UI design
+- ❓ Multiple-choice questions
+- ✅ Instant feedback (correct/incorrect answer highlighting)
+- ⏳ Timer for each quiz to increase challenge
+- 📊 Score tracking
 
 ---
 
