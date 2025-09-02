@@ -1,0 +1,85 @@
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.input-container{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+
+
+label{
+    margin-right: 10px;
+    width: 20%;
+
+   
+    
+}
+hr{
+    margin-bottom: 20px;
+}
+input,select{
+    width: 80%;
+    padding:10px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+ 
+
+
+}
+.checkBox{
+    width: 20px;
+    height: 15px;
+    
+}
+button{
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    color:white;
+    background-color: rgb(238, 47, 171);
+    font-size: 18px;
+    margin-top: 10px;
+}
+/* make button disabled */
+.disabled{
+    background-color:gray !important;
+
+}
+
+
+/*  start model style */
+
+.model-container{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.805);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+
+}
+.model{
+    color: green;
+    background-color: white;
+    width: 70%;
+    border-radius:6px;
+    z-index: 20;
+      padding: 10px ;
+    min-height: 30px;
+       font-size: 20px;
+    line-height: 25px;
+}
+
+
+/*  end  model style */
+

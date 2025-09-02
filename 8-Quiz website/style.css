@@ -674,7 +674,7 @@ ul {
     position: relative;
     transform: rotateY(180deg);
     backface-visibility: hidden;
-  background-color:linear-gradient(135deg, #3B82F6, #A78BFA);
+    background-color:linear-gradient(135deg, #3B82F6, #A78BFA);
     border-radius: 24px;
     overflow: hidden;
     width: 100%;

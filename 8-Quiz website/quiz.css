@@ -106,15 +106,56 @@ body{
   
   padding: 1rem;
   border-radius: var(--border-radius);
-background: conic-gradient(
-  from 0deg,
-  #64513b,
- #64513b, 
+
+     /* background: conic-gradient(
+  from var(--angle, 180deg),
+#c8a97e,
+  #7DAF9C,
+  #f7bfb4,
+#b39a9a,
+  #816363,
  #a47157, 
  #d8b4a0, #64513b, #8a6f52, #c8a97e,
-  #64513b, #7a5b4e, #b39a9a, #A48165, #64513b
+ #7a5b4e, #b39a9a, #A48165, #64513b,
+  #c8a97e
+
+ 
+); */
+
+
+/* background: conic-gradient(
+  from 90deg at 50% 50%,
+  #d0e7ff 0%,
+  #a0d4ff 30%,
+  #70c1ff 60%,
+  #a0d4ff 85%,
+  #d0e7ff 100%
+); */
+ /* background: conic-gradient(
+  from 90deg at 50% 50%,
+  #e6f2ff 0%,
+  #99ccff 35%,
+  #c8a97e 55%,
+  #a0d4ff 75%,
+  #e6f2ff 100%
+); */
+  background: conic-gradient(
+  from 90deg at 50% 50%,
+  #e6f2ff 0%,
+  #99ccff 30%,
+  #c8a97e 50%,
+  #c8a97e 65%,
+  #a0d4ff 85%,
+  #e6f2ff 100%
 );
 
+ /* background: conic-gradient(
+  from 90deg at 50% 50%,
+  #6f7f8b 0%,
+  #8aa1b5 30%,
+  #b0c4d1 60%,
+  #6f7f8b 100%
+); */
 
 
 
@@ -184,7 +225,7 @@ background-color:var(--main-color);
     font-weight: bold;
     color: #ffffff;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.314);
-  background-color: #4F4C3B;
+  background-color: #8c7556;
      /* background: conic-gradient(
   from var(--angle, 0deg),
   #4B4534,
@@ -198,7 +239,7 @@ background-color:var(--main-color);
 
 }
 .quiz-area >button:hover{
-     background-color: #3f3d2f;
+     background-color: #725f46;
    
     
 
