@@ -75,8 +75,9 @@ button{
     border-radius:6px;
     z-index: 20;
       padding: 10px ;
-    min-height: 30px;
+    min-height: 20px;
        font-size: 20px;
+       font-weight: bold;
     line-height: 25px;
 }
 

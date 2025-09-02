@@ -31,7 +31,7 @@ export default function RegistreationForm(){
     if(name === ""){
         setErrorMessage("Please Enter name");
     }else if(email==="" || !emailRegex.test(email))
-          setErrorMessage("Please Enter avalid email");
+          setErrorMessage("Please Enter valid email");
          else if(password===""|| ! passwordRegex.test(password))
             setErrorMessage("Password must be at least 8 characters, include uppercase, lowercase, number, and special character.");
         else if(salaryRange==="")
