@@ -1,8 +1,8 @@
-// {
-//   "liveServer.settings.https": {
-//     "enable": true,
-//     "cert": "C:\\Users\\2022\\Desktop\\fullstack Tasks\\8-Quiz website\\ssl\\server.cert",
-//     "key": "C:\\Users\\2022\\Desktop\\fullstack Tasks\\8-Quiz website\\ssl\\server.key"
-//   },
-//   "liveServer.settings.port": 5500
-// }
+{
+  "liveServer.settings.https": {
+    "enable": true,
+    "cert": "C:\\Users\\2022\\Desktop\\fullstack Tasks\\8-Quiz website\\ssl\\server.cert",
+    "key": "C:\\Users\\2022\\Desktop\\fullstack Tasks\\8-Quiz website\\ssl\\server.key"
+  },
+  "liveServer.settings.port": 5500
+}

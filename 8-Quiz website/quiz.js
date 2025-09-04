@@ -19,11 +19,11 @@ const resultSoundElement = document.getElementById("Sound");
 
 
  let currentState=JSON.parse(localStorage.getItem(`questionState_${selectedQuiz}`))||{};
-let currentIndex=parseInt(currentState['currentIndex'])||0;
+let currentIndex=parseInt(currentState['currentIndex']) || 0;
 let score=parseFloat(currentState['currentScore'])||0;
 let questions;
 let countInterval;
-let duration =120;
+let duration =70;
 
 
 
@@ -330,7 +330,7 @@ cardElement.innerHTML=`
       <div class="card-front">
         <div class="card-front__tp">
           <i class="card-front__icon fa-solid fa-file-pen"></i>
-          <h2 class="card-front__heading">HTML </h2>
+          <h2 class="card-front__heading">${localStorage.selectedQuiz}</h2>
         </div>
 
         <div class="card-front__bt">

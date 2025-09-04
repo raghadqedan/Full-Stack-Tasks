@@ -275,14 +275,14 @@ ul {
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    box-shadow: 0 8px 15px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 8px 15px #ffffffad
 
 }
 
 .landing .container .start-now:hover {
     background-color: #FACC15;
     transform: translateY(-3px);
-    box-shadow: 0 12px 20px rgba(79, 70, 229, 0.4);
+      box-shadow: 0 8px 15px #ffffffad;
     color: black;
     font-weight: bold;
 }
