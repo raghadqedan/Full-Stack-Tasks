@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.iconButton{
+  transition: all 0.2sec !important;
+}
+.iconButton:hover{
+  background-color: #3b404c1c !important;
+  box-shadow: 0px 4px 7px  rgb(0,0,0,0.2);
+
+}
+.toDoCard{
+  transition: all 0.2sec !important;
+}
+.toDoCard:hover{
+scale: 1.03 ;
+  box-shadow: 0px 4px 7px  rgb(0,0,0,0.2);
+
+
+}
+.AddButton:hover{
+  background-color:blue ;
+  transform: translateY(-2px)
+}
+.toggleButton:hover{
+  background-color: #90CAF9 !important;
+  border-radius: 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* custom fonts  */
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter_18pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter_18pt-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter_18pt-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
