@@ -4,7 +4,8 @@ This is my **first project using React** 🎉.
 While building it, I learned a lot about component-based development, state management, Material UI, and implementing **drag & drop** for task organization.  
 
 ---
-
+## 🚀 Live Demo
+🔗 [Check it out on Netlify](https://endearing-stardust-684dbd.netlify.app/)
 
 ## 🚀 Features
 - Add new tasks ✍️  
