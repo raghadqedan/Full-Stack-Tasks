@@ -50,7 +50,6 @@ const sensors = useSensors(
   const [dialogToDo, setDialogToDo] = useState(null);
 
   const { tasks, dispatch } = useTasks();
-  // const [task,dispatch]=useReducer(toDosReducer,[])
   const [openDeleteDialog, setopenDeleteDialog] = useState(false);
 
   const [UpdatedToDo, setUpdatedToDo] = useState({
@@ -121,6 +120,7 @@ function handleDragEnd(event) {
       payload: { title: input, priority: taskPriority },
     });
     setInput("");
+    setTaskPriority("None")
     showToast("Task added successfully");
   }
   function handleUpdateTask(event) {
