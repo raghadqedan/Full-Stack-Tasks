@@ -17,7 +17,7 @@ A modern and interactive **Weather Website** built with **React**, allowing user
 
 ## Demo 🎬
 
-[Live Demo](#) *(add your hosted link here)*
+[Live Demo](#) *https://lucky-clafoutis-22c151.netlify.app/*
 
 ---
 
@@ -47,3 +47,11 @@ A modern and interactive **Weather Website** built with **React**, allowing user
 ```bash
 git clone https://github.com/raghadqedan/Full-Stack-Tasks/tree/main/9-react/10-WeatherWebsite/weather-website.git
 cd weather-website
+
+2. Install dependencies:
+
+npm install
+
+3. Start the development server:
+
+npm start
