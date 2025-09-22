@@ -41,20 +41,7 @@ export function toDosReducer(currentToDoTasks, action) {
       });
     }
     case "get": {
-      return JSON.parse(localStorage.getItem("todotasks")) || [{
-          "id": uuidv4(),
-          "title": "Finish React ToDo App",
-          "description": "Complete the remaining features and fix UI issues",
-          "priority": "High",
-          "completed": false
-        },
-        {
-          "id": uuidv4(),
-          "title": "Read about ASP.NET Core",
-          "description": "Cover the basics of controllers and routing",
-          "priority": "Medium",
-          "completed": false
-        },];
+      return JSON.parse(localStorage.getItem("todotasks")) || [];
     }
     case "set": {
       localStorage.setItem("todotasks", JSON.stringify(currentToDoTasks));

@@ -3,9 +3,9 @@ import './App.css';
 import ToDoList from './components/ToDoList';
 import { createTheme,ThemeProvider } from '@mui/material/styles';
 import {TasksProvider} from './contexts/tasksContext';
-import { useEffect,useReducer } from 'react';
+
 import { ToastProvider } from './contexts/ToastContext';
-import { toDosReducer } from './reducers/ToDosReducer';
+
 
 
 
@@ -26,17 +26,6 @@ function App() {
 });
 
 
-//  const[task,setTask]= useState(()=>(JSON.parse(localStorage.getItem("todotasks")) ||[]));
- const[tasks,dispatch]= useReducer(toDosReducer,[]);
-
- useEffect(()=>{
-    dispatch({type:"get"});
- },[])
-
-  useEffect(()=>{
- dispatch({type:"set"});
- },[tasks])
- 
   return (
     
     <ThemeProvider theme={theme}>

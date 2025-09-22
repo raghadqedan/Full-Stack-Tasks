@@ -13,16 +13,11 @@ import { useToast } from "../contexts/ToastContext";
 export default function ToDo({ data, handleClickOpen, handleOpenEditDialog }) {
   const { id, title, description, isComplited } = data;
   const { dispatch } = useTasks();
-  // const [tasks,dispatch]=useReducer(toDosReducer,[])
 
-  //use the Toast context to show the toast
   const { showToast } = useToast();
 
   function handleCompleteTask(taskId) {
-    // const newTasks = task.map((t) => {
-    //   return t.id !== taskId ? t : { ...t, isComplited: !t.isComplited };
-    // });
-    // setTask(newTasks);
+
     dispatch({ type: "completed", payload: { taskId: taskId } });
 
     showToast(
