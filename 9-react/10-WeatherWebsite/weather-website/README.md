@@ -1,17 +1,17 @@
 # Weather Website 🌤️
 
-A modern and interactive **Weather Website** built with **React**, allowing users to check current weather conditions in different locations with multilingual support.
-
+A modern and interactive Weather Website built with React and Material-UI (MUI).
+Users can check the current weather conditions in different Palestinian cities, with support for Arabic (RTL) and English (LTR) languages .
 ---
 
 ## Features ✨
 
-- Search for weather by **city name**.
-- Display **temperature**, **humidity**, **wind speed**, and **weather condition**.
+- Select city .
+- Display **min-temperature**, **max-temperature**, and **weather condition**.
 - Show **current date and time** using **Moment.js**.
 - **Dynamic weather icons** based on the weather type.
-- Multi-language support with **React i18next**.
-- **Responsive design** for mobile and desktop.
+- Arabic and English languages support with **React i18next**.
+
 
 ---
 

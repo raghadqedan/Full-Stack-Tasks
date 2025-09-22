@@ -20,6 +20,7 @@ import moment from 'moment';
 import './i18n';
 //to enabel the get date and time in another language as arabic we need import the locales files 
 import 'moment/min/locales';
+
 moment.locale('ar');
 
 
@@ -30,7 +31,7 @@ function App() {
   const [dateAndTime,setDateAndTime]=useState("");
   const [local,setLocal]=useState("ar");
 
-  const direction=local=="ar"?"rtl":"tlr";
+  const direction=local=="ar"?"rtl":"ltr";
   const [city, setCity] = useState('palestine');
 
  
@@ -88,13 +89,15 @@ const cities = {
           setLocal("en");
            i18n.changeLanguage("en");
            moment.locale('en');
-           setDateAndTime(moment().format('MMMM Do YYYY, h:mm:ss a'));
+              setDateAndTime(moment().format('MMMM Do YYYY, h:mm:ss a'));
+    
       
     }else if(local==="en"){
        setLocal("ar");
            i18n.changeLanguage("ar");
            moment.locale('ar');
-             setDateAndTime(moment().format('MMMM Do YYYY, h:mm:ss a'));
+              setDateAndTime(moment().format('MMMM Do YYYY, h:mm:ss a'));
+ 
           
 
 
@@ -111,8 +114,11 @@ const cities = {
 
 
 useEffect(()=>{
+      // Update date & time every second
+    const timer = setInterval(() => {
+      setDateAndTime(moment().format('MMMM Do YYYY, h:mm:ss a'));
+    }, 1000);
 
-  setDateAndTime(moment().format('MMMM Do YYYY, h:mm:ss a'));
   const controller = new AbortController();
 
  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=04374ea58cb016636e95a96fe2fa5fb7&units=metric`,{
@@ -137,11 +143,12 @@ useEffect(()=>{
 
 
   return ()=>{
+    clearInterval(timer)
     controller.abort();
        console.log("🧹 cleanup running...");
   }
 
-},[city])
+},[city,dateAndTime])
 
 
 
@@ -149,7 +156,7 @@ useEffect(()=>{
   return (
 <ThemeProvider theme={theme}>
     <div className="App">
-     <Container maxWidth="sm"  sx={{display:"flex",alignItems:"center" ,flexDirection:"column",padding:"20px"}} >
+     <Container maxWidth="sm"  sx={{display:"flex",alignItems:"center" ,flexDirection:"column",padding:"20px",width:"600px"}} >
          <Box sx={{ minWidth: "200px",marginBottom:"30px",marginTop:"10px"}}>
       <FormControl fullWidth >
       <InputLabel id="demo-simple-select-label" sx={{fontSize:"20px",marginTop:"-5px"}}>City</InputLabel>
@@ -171,15 +178,15 @@ useEffect(()=>{
             </FormControl>
     </Box>
       {/* Card */}
-       <div className='card' style={{backgroundColor:"rgba(28, 52, 255, 91)",color:"white",padding:"20px 30px",borderRadius:"15px",boxShadow:"0px 11px 1px rgba(0,0,0,0.05)"}} dir={direction}>
+       <div className='card' style={{backgroundColor:"rgba(28, 52, 255, 91)",color:"white",padding:"20px 30px",borderRadius:"15px",boxShadow:"0px 11px 1px rgba(0,0,0,0.05)",}} dir={direction}>
       {/* card Content */}
         <div className='card-content' >
           {/* date and name container */}
 
-            <div className='date-and-name direction' style={{display:"flex", alignItems:"end",textAlign:"right"}}>
+            <Box className='date-and-name direction' sx={{display:"flex", flexDirection: { xs: "column",md:"row",lg:"r"},  alignItems:"start",justifyContent:"end",alignItems:"end"}}>
                <Typography variant='h2' sx={{marginLeft:"10px",fontWeight:"500"}}>{t(city) }</Typography>
-               <Typography variant='h6'  sx={{marginLeft:"20px"}}>{dateAndTime}</Typography>
-            </div>
+               <Typography variant='h6'  sx={{marginLeft:"20px",}}>{dateAndTime}</Typography>
+            </Box>
             <Divider sx={{borderBottomWidth:"3px",borderBottomColor:"white",my:1}}/>
             {/* content */}
             <div className='content' style={{display:"flex",padding:"15px",justifyContent:"space-between" ,gap:"30px"}}>
