@@ -45,5 +45,5 @@ A modern and interactive **Weather Website** built with **React**, allowing user
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/weather-website.git
+git clone https://github.com/raghadqedan/Full-Stack-Tasks/tree/main/9-react/10-WeatherWebsite/weather-website.git
 cd weather-website
