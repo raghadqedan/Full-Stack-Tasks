@@ -17,7 +17,7 @@ Users can check the current weather conditions in different Palestinian cities, 
 
 ## Demo 🎬
 
-[Live Demo](#) *https://lucky-clafoutis-22c151.netlify.app/*
+[Live Demo](#) *https://jovial-biscochitos-7caf46.netlify.app/*
 
 ---
 
