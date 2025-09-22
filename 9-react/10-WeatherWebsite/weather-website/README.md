@@ -44,13 +44,15 @@ A modern and interactive **Weather Website** built with **React**, allowing user
 
 1. Clone the repository:
 
+```bash
 git clone https://github.com/raghadqedan/Full-Stack-Tasks/tree/main/9-react/10-WeatherWebsite/weather-website.git
 cd weather-website
-
+```
 2. Install dependencies:
-
+```bash
 npm install
-
+```
 3. Start the development server:
-
+```bash
 npm start
+```
