@@ -1,16 +1,30 @@
-# React + Vite
+# Movie Search App 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive movie search application built with **React**.  
+This project allows users to search for movies and  view trending results, and check detailed information about each movie  using TMDB API (https://www.themoviedb.org/), with trending data stored in [Appwrite](https://appwrite.io/).
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
+- Search for movies with real-time debounced input.
+ -View detailed information for each movie (Movie Details Page)ز 
+- Display trending movies based on search counts (stored in Appwrite).
+- Modern responsive UI built with Tailwind CSS.
+- Fast performance powered by Vite + React.
+- Save search statistics in Appwrite Database.
+- Navigation handled using **React Router DOM**
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
+- **React** – Frontend library for building UI  
+- **React Router DOM** – Client-side routing  
+- **Axios** – For fetching data from the API  
+- **Tailwind CSS** – For modern and responsive styling  
+- **Appwrite** – For backend/database
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Getting Started
+
