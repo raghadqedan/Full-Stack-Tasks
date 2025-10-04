@@ -5,7 +5,7 @@ import { Spinner } from './components/spinner';
 import { MovieCard } from './components/MovieCard';
 
 import Trending from './components/trending.jsx';
-import Home from './components/Home.jsx';
+import Home from './pages/Home.jsx';
 import { MovieDetails } from './pages/MovieDetails.jsx';
 
 //Routing 
@@ -20,6 +20,7 @@ const API_URL='https://api.themoviedb.org/3/';
 
 function App() {
 return <>
+
      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/movie/:id" element={<MovieDetails />} />

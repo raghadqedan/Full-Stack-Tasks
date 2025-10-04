@@ -6,6 +6,7 @@ This project allows users to search for movies and  view trending results, and c
 
 ---
 
+
 ## 🚀 Features
 - Search for movies with real-time debounced input.
  -View detailed information for each movie (Movie Details Page)ز 
@@ -26,5 +27,7 @@ This project allows users to search for movies and  view trending results, and c
 
 ---
 
-## 🚀 Getting Started
+## 🌐 Live Demo
+Check the live version of the app here:  
+ https://sage-faun-61d4c5.netlify.app/
 

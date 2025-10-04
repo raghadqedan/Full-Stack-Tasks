@@ -1,12 +1,12 @@
 
 
-import { Search } from './Search.jsx';
+import { Search } from '../components/Search.jsx';
 import { useState,useEffect } from 'react'
 import axios from 'axios';
-import { MovieCard } from './MovieCard.jsx';
-import { useDebounced } from './useDebounced.js';
+import { MovieCard } from '../components/MovieCard.jsx';
+import { useDebounced } from '../components/useDebounced.js';
 import {updateSearchCount,getTrending } from'../appwrite.js'
-import Trending from './trending.jsx';
+import Trending from '../components/trending.jsx';
 
 
 
