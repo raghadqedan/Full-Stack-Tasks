@@ -27,7 +27,7 @@ export function MovieCard({
             poster_path
               ? `
 ${IMAGE_URL}w500/${poster_path}`
-              : "./No-Poster.png"
+              : "/No-Poster.png"
           }
         />
 

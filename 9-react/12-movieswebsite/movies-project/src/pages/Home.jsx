@@ -108,7 +108,7 @@ function Home() {
           <div className="header mx-auto mt-5 w-full sm:mt-10">
             <img
               className="mx-auto my-auto max-w-3xl rounded-2xl drop-shadow-md max-sm:w-3/4 sm:w-lg"
-              src="/public/imagee.jpg"
+              src="/imagee.jpg"
             />
             <h1 className="xs:text-[40px] mx-auto max-w-4xl text-center text-5xl font-bold text-white max-sm:mt-3 max-sm:text-[30px] sm:text-[64px] sm:leading-[76px]">
               Find <span className="text-gradient">Movies</span> Yo Will Enjoy
