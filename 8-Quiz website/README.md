@@ -12,6 +12,8 @@ This project allows users to test their knowledge through interactive quizzes wi
 - ✅ Instant feedback (correct/incorrect answer highlighting)
 - ⏳ Timer for each quiz to increase challenge
 - 📊 Score tracking
+- If the user leaves the quiz due to issues like a power cut or page reload, their progress — current question, answers, and remaining time — is saved in localStorage.
+  When they return, the quiz automatically resumes from where they left off, as long as the time hasn’t expired.
 
 ---
 
